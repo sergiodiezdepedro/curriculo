@@ -1,0 +1,158 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+$fuente-primaria: 'Ubuntu',sans-serif;
+$color-destacado: orange;
+$color-experiencia: #8a4b08;
+$color-formacion: #a9bcf5;
+$color-datos: #585858;
+$color-herramientas: #66bb6a;
+$color-idiomas: #f06292;
+$color-oscuro: #212121;
+$color-oscuro-complementario: #808080;
+$color-fondo-inicio: #eee;
+$bk1: 768px;
+$bk2: 769px;
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fuente-primaria;
+    @media screen and (min-width: $bk2) {
+        font-size: 17px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+nav.navbar {
+    background-color: $color-oscuro;
+}
+
+#inicio {
+    background-color: $color-fondo-inicio;
+}
+
+#datos {
+    background: $color-datos;
+    color: $color-fondo-inicio;
+    a {
+        color: lighten($color-datos, 40%);
+    }
+}
+
+#experiencia {
+    background: $color-experiencia;
+    color: $color-fondo-inicio;
+    a {
+        color: lighten($color-experiencia, 40%);
+    }
+}
+
+#formacion {
+    background: $color-formacion;
+    color: darken($color-formacion, 70%);
+}
+
+#herramientas {
+    background: $color-herramientas;
+    color: darken($color-herramientas, 50%);
+    p {
+        a {
+            color: lighten($color-herramientas, 35%);
+        }
+    }
+}
+
+#idiomas {
+    background: $color-idiomas;
+    color: darken($color-idiomas, 50%);
+}
+
+.badges {
+    margin-top: 2.5rem;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.contenedor-texto {
+    text-align: left;
+}
+
+.encabezado-experiencia {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    @media screen and (min-width: $bk2) {
+        text-transform: uppercase;
+    }
+}
+
+.iconos {
+    display: block;
+    margin: 1rem;
+    &:hover {
+        transform: rotateY(360deg) rotateZ(360deg);
+        transition: all 2s ease-out;
+    }
+    @media screen and (min-width: $bk1) {
+        display: inline-block;
+    }
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a,
+.navbar-toggle-collapsed {
+    color: $color-destacado;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: $color-destacado;
+}
+
+.round {
+    border-radius: 100px;
+    border: solid thick $color-oscuro-complementario;
+}
+
+.seccion {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @media screen and (min-width: $bk2) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        font-size: 2.5rem;
+        min-height: 100vh;
+    }
+    @media screen and (max-width: $bk1) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    h2,
+    p {
+        margin: 2rem 0;
+    }
+    img {
+        @media screen and (max-width: $bk1) {
+            margin-bottom: 2rem;
+        }
+        @media screen and (min-width: $bk2) {
+            margin-bottom: 5rem;
+        }
+    }
+}
