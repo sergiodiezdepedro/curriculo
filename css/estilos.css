@@ -1,88 +1,116 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu";
-* {
-  border: 0;
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
-  font-family: "Ubuntu", sans-serif; }
-  @media screen and (min-width: 769px) {
-    body {
-      font-size: 17px; } }
+  font-family: "Ubuntu", sans-serif;
+}
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 17px;
+  }
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 nav.navbar {
-  background-color: #212121; }
+  background-color: #212121;
+}
 
 #inicio {
-  background-color: #eee; }
+  background-color: #eee;
+}
 
 #datos {
   background: #585858;
-  color: #eee; }
-  #datos a {
-    color: #bebebe; }
+  color: #eee;
+}
+#datos a {
+  color: #bebebe;
+}
 
 #experiencia {
   background: #8a4b08;
-  color: #eee; }
-  #experiencia a {
-    color: #f6b168; }
+  color: #eee;
+}
+#experiencia a {
+  color: #f6b168;
+}
 
 #formacion {
   background: #a9bcf5;
-  color: #061133; }
+  color: #061133;
+}
 
 #herramientas {
   background: #66bb6a;
-  color: #0a180b; }
-  #herramientas p a {
-    color: #e2f2e2; }
+  color: #0a180b;
+}
+#herramientas p a {
+  color: #e2f2e2;
+}
 
 #idiomas {
   background: #f06292;
-  color: #4c071e; }
+  color: #4c071e;
+}
 
 .badges {
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+}
 
 .contenedor {
-  width: 100%; }
+  width: 100%;
+}
 
 .contenedor-texto {
-  text-align: left; }
+  text-align: left;
+}
 
 .encabezado-experiencia {
   font-size: 3rem;
-  margin-bottom: 4rem; }
-  @media screen and (min-width: 769px) {
-    .encabezado-experiencia {
-      text-transform: uppercase; } }
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 769px) {
+  .encabezado-experiencia {
+    text-transform: uppercase;
+  }
+}
 
 .iconos {
   display: block;
-  margin: 1rem; }
-  .iconos:hover {
-    transform: rotateY(360deg) rotateZ(360deg);
-    transition: all 2s ease-out; }
-  @media screen and (min-width: 768px) {
-    .iconos {
-      display: inline-block; } }
+  margin: 1rem;
+}
+.iconos:hover {
+  transform: scale(1.2);
+  transition: transform 300ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .iconos {
+    display: inline-block;
+  }
+}
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a,
 .navbar-toggle-collapsed {
-  color: orange; }
+  color: #ffa500;
+}
 
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: orange; }
+  background-color: #ffa500;
+}
 
 .round {
   border-radius: 100px;
-  border: solid thick #808080; }
+  border: solid thick #808080;
+}
 
 .seccion {
   align-items: center;
@@ -90,29 +118,41 @@ nav.navbar {
   flex-direction: column;
   justify-content: center;
   padding-top: 5rem;
-  padding-bottom: 5rem; }
-  @media screen and (min-width: 769px) {
-    .seccion {
-      padding-left: 10rem;
-      padding-right: 10rem;
-      font-size: 2.5rem;
-      min-height: 100vh; } }
-  @media screen and (max-width: 768px) {
-    .seccion {
-      padding-left: 3rem;
-      padding-right: 3rem; } }
-  .seccion a {
-    text-decoration: none; }
-    .seccion a:hover {
-      text-decoration: underline; }
-  .seccion h2,
-  .seccion p {
-    margin: 2rem 0; }
-  @media screen and (max-width: 768px) {
-    .seccion img {
-      margin-bottom: 2rem; } }
-  @media screen and (min-width: 769px) {
-    .seccion img {
-      margin-bottom: 5rem; } }
+  padding-bottom: 5rem;
+}
+@media screen and (min-width: 769px) {
+  .seccion {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 2.5rem;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .seccion {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.seccion a {
+  text-decoration: none;
+}
+.seccion a:hover {
+  text-decoration: underline;
+}
+.seccion h2,
+.seccion p {
+  margin: 2rem 0;
+}
+@media screen and (max-width: 768px) {
+  .seccion img {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .seccion img {
+    margin-bottom: 5rem;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
